@@ -4,10 +4,11 @@ The window system used in Nightmare
 ### Setup
 Add the js and css CDN and create a new window
 
-```js
+```html
 <script src="https://cdn.jsdelivr.net/gh/FogNetwork/Nightmare-Windows/windows.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FogNetwork/Nightmare-Windows/windows.css">
-
+```
+```js
 var window = new Nightmare({
 "id": "0",
 "title": "Example",
