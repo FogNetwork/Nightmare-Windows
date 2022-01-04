@@ -122,7 +122,7 @@ main.appendChild(html)
 appjs(config.js, config.id)
 }
 
-document.getElementsByTagName("body")[0].appendChild(main)
+document.getElementsByTagName("html")[0].appendChild(main)
 
 apptop(main)
 
