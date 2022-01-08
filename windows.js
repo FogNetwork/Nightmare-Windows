@@ -42,13 +42,6 @@ element.style.zIndex = topz + 1
 topz = topz + 1
 }
 
-async function appjs(url, appid) {
-var script = await fetch(url)
-var text = await script.text()
-text = "var appid = " + 'document.getElementById("window" + appid).childNodes[1]\n\n' + text
-eval(text)
-}
-
 function Nightmare(config) {
 if (config.id == null) return console.error("Error with config: Add an id");
 
@@ -119,7 +112,14 @@ html.className = "html"
 if (config.theme == "dark") html.className = "html htmldark"
 main.appendChild(html)
 
-appjs(config.js, config.id)
+async function injectid() {
+var script = await fetch(config.js)
+var text = await script.text()
+text = "var appid = " + 'main.childNodes[1]\n\n' + text
+eval(text)
+}
+injectid()
+
 }
 
 document.getElementsByTagName("html")[0].appendChild(main)
