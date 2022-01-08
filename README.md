@@ -9,8 +9,7 @@ Add the js and css CDN and create a new window
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FogNetwork/Nightmare-Windows/windows.css">
 ```
 ```js
-var window = new Nightmare({
-"id": "0",
+new Nightmare({
 "title": "Example",
 "type": "url",
 "url": "https://example.com",
@@ -21,8 +20,7 @@ var window = new Nightmare({
 
 ### Advanced
 ```js
-var window = new Nightmare({
-"id": "0", //App ID - Required
+new Nightmare({
 "title": "Example", //Window Title - Required
 "type": "html", //URL, Html or Js - Required
 "url": "https://example.com", //For url
@@ -32,3 +30,7 @@ var window = new Nightmare({
 "height": 600, //Height - No quotes
 "theme": "dark" //Light or Dark
 })
+```
+
+### Notes
+When creating a js app it will inject a var called `appid` which is the window. You can append a element inside using `appid.appendChild(element)`
