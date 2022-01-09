@@ -43,8 +43,6 @@ topz = topz + 1
 }
 
 function Nightmare(config) {
-if (config.id == null) return console.error("Error with config: Add an id");
-
 if (config.title == null) return console.error("Error with config: Add a title");
 
 if (config.type == null) return console.error("Error with config: Add a type");
