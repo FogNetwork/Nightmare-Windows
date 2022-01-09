@@ -66,7 +66,6 @@ main.style.width = String(config.width + "px")
 main.style.height = String(config.height + "px")
 main.setAttribute("dataFullscreen", "false")
 main.setAttribute("onmousedown", "apptop(this)")
-main.id = "window" + config.id
 main.className = "window"
 if (config.theme == "dark") main.className = "window windowdark"
 
