@@ -32,7 +32,19 @@ new Nightmare({
 })
 ```
 
-### Notes
+### Creating Apps
+**url**
+
+Just add a url which will be added in an iframe
+
+**html**
+
+Just add html code which will be added in the window
+
+**js**
+
+Add a url to a js file that will be run onclick. Allows for more custom features
+
 When creating a js app it will inject a var called `appid` which is the window. You can append a element inside using `appid.appendChild(element)`
 
 ### Usage
