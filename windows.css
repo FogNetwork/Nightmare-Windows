@@ -3,8 +3,6 @@
 .window {
 background: white;
 border-radius: 5px;
-min-width: 300px;
-min-height: 45px;
 position: fixed !important;
 filter: drop-shadow(0 4px 4px rgba(0,0,0,0.16));
 overflow: hidden;
