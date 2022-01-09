@@ -34,3 +34,6 @@ new Nightmare({
 
 ### Notes
 When creating a js app it will inject a var called `appid` which is the window. You can append a element inside using `appid.appendChild(element)`
+
+### Usage
+If you wish to use Nightmare Windows commercially (on your service) you must include credit to Nightmare Windows somewhere on your service
